@@ -81,7 +81,7 @@
         
           </style>
 <body>
-    <div ><label id="myprofile" style="margin-left: 6%; margin-top: 2%;">APPLY LEAVE</label>
+    <div ><label id="myprofile" style="margin-left: 6%; margin-top: 2%; color: #6c7293;">APPLY LEAVE</label>
         <div class="container" >
             <div id="firstbox" class="row shadow p-3" style="background-color: #191c24;">
                 <div class="col-md-12 ">
@@ -90,29 +90,29 @@
                 {% csrf_token %}
                         <div class="row" style="margin-top: 5%;">
                             <div class="col-md-2">
-                            <label style="color: rgb(255, 255, 255);">LEAVE FROM</label>
+                            <label style="color: #6c7293;">LEAVE FROM</label>
                             </div>
                             <div class="col-md-4">
                             <input type="date" name="leavefrom" id="date"class="w-100" required>
                             </div>
                             <div class="col-md-2">
-                            <label style="color: rgb(255, 255, 255);">LEAVE TO</label>
+                            <label style="color: #6c7293;">LEAVE TO</label>
                             </div>
-                            <div class="col-md-4">
-                            <input type="date" name="leaveto" id="date" style="width:160px" class="w-100" required>
+                            <div class="col-md-4" >
+                            <input type="date" name="leaveto" id="date" style="width:160px ;" class="w-100" required>
                             </div>
                         </div>
-                    <label style="color: rgb(255, 255, 255); margin-top: 5%;" >REASONS</label><br>
+                    <label style="color: #6c7293; margin-top: 5%;" >REASONS</label><br>
                     <div class="row">
                         <div class="col-md-12">
-                            <br><textarea class="w-100" rows="4" cols="97" name="reason" required></textarea>
+                            <br><textarea class="w-100" rows="4" cols="97" name="reason" style="background-color: #191c24; color: white;" required></textarea>
                         </div>
                      </div>
                      <div class="row">
                          <div class="col-md-4"></div>
                          <div class="col-md-4"></div>
                          <div class="col-md-4">
-                    <button type="submit" class="btn btn-primary Search w-100 " style="margin-top: 10px;">APPLY</button>
+                    <button type="submit" class="btn btn-primary Search w-100 " style="margin-top: 10px;background-color: #191c24; border: 1px solid white; ">APPLY</button>
                         </div>
                     </div>
                     </form>
