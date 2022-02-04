@@ -1,0 +1,131 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    /* 
+        #firstbox{
+          background-color: white;
+          height: auto;
+          float: right;
+          width: 65%;
+          margin-right: 8%;
+          border-radius: 20px;
+        }
+        #firstbox div{
+          float: left;
+        }
+        #firstbox label{
+          margin-left: 120px;
+          padding-top: 14px;
+          color: #58B7AA;
+          font-weight: 400;
+          font-size: 20px;
+          margin-top: 30px;
+          width: 200px;
+        }
+        .Search{
+          margin-top: 2%;
+          float: right;
+          margin-right: 12.5%;
+          padding-left: 3%;
+          padding-right: 3%;
+          margin-bottom: 2%;
+        }
+        thead{
+          color: #58B7AA;
+        }
+        #date{
+          width: 450px;
+          padding: 0.5%;
+          border-radius: 4px;
+          border-width: 1px;
+        }
+        
+        #box2{
+          padding: 1% 5% 1% 5%;
+          background-color: white;
+          float: left;
+          margin-top: 3%;
+          margin-left: 11%;
+          width:860px;
+          height: 150px;
+          border: 1px solid #707070;
+        }
+        textarea{
+          margin-left: 13%;
+        }
+        label{
+          margin-left: 8%;
+        } */
+        #firstbox{
+          margin-top: 5%;
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+        /* input{
+          background-color: black;
+        } */
+        
+        
+        
+          </style>
+<body>
+    <div ><label id="myprofile" style="margin-left: 6%; margin-top: 2%;">APPLY LEAVE</label>
+        <div class="container" >
+            <div id="firstbox" class="row shadow p-3" style="background-color: #191c24;">
+                <div class="col-md-12 ">
+                  
+                <form action="/coreapp/Devapplyleav3" method="post">
+                {% csrf_token %}
+                        <div class="row" style="margin-top: 5%;">
+                            <div class="col-md-2">
+                            <label style="color: rgb(255, 255, 255);">LEAVE FROM</label>
+                            </div>
+                            <div class="col-md-4">
+                            <input type="date" name="leavefrom" id="date"class="w-100" required>
+                            </div>
+                            <div class="col-md-2">
+                            <label style="color: rgb(255, 255, 255);">LEAVE TO</label>
+                            </div>
+                            <div class="col-md-4">
+                            <input type="date" name="leaveto" id="date" style="width:160px" class="w-100" required>
+                            </div>
+                        </div>
+                    <label style="color: rgb(255, 255, 255); margin-top: 5%;" >REASONS</label><br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <br><textarea class="w-100" rows="4" cols="97" name="reason" required></textarea>
+                        </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-md-4"></div>
+                         <div class="col-md-4"></div>
+                         <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary Search w-100 " style="margin-top: 10px;">APPLY</button>
+                        </div>
+                    </div>
+                    </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    </body>
+</body>
+</html>
+
+    
+   
+    
+{% endblock %}
