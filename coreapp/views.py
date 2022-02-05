@@ -18,6 +18,12 @@ def Tattend(request):
     return render(request,'Tattend.html')
 def Devapplyleav3(request):
     return render(request,'Devapplyleav3.html')
+def Manager_index(request):
+    return render(request,'Manager_index.html')
+def Manager_accepted_projects(request):
+    return render(request,'Manager_accepted_projects.html')
+def Manager_regected_projects(request):
+    return render(request,'Manager_regected_projects.html')
 
 
 

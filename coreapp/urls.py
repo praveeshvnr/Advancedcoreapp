@@ -9,4 +9,8 @@ urlpatterns=[
     re_path(r'^Devleaverequiest$', views.Devleaverequiest, name='projectdetails'),
     re_path(r'^Devattendance$', views.Devattendance, name='submitted'),
     re_path(r'^Devapplyleav3$', views.Devapplyleav3, name='task'),
+    re_path(r'^Tattend$', views.Tattend, name='task'),
+    re_path(r'^Manager_index$', views.Manager_index, name='Manager_index'),
+    re_path(r'^Manager_accepted_projects$', views.Manager_accepted_projects, name='Manager_accepted_projects'),
+    re_path(r'^Manager_regected_projects$', views.Manager_regected_projects, name='Manager_regected_projects'),
 ]

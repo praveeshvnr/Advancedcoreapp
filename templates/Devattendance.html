@@ -58,8 +58,8 @@
               <div class="col-md-3 mt-5"  ></div>
               
             <div class="col-md-6 mt-5"  >
-            <div id="hiddendiv" class="w-80" >
-             
+            <div id="hiddendiv" class="w-80"  style="display: none;">
+              <div class="conatainer "><div class="row table-responsive"> <div class="col-md-2"><table class="table table-bordered   style="color:  ><thead><style>th{padding: 1px; }</style><tr><th >DATE</th><th>STATUS</th> <th>LOGIN TIME</th><th>LOGOUT TIME</th> </tr> </thead><tbody></tbody></table></div></div></div>
         </div>
       </div>
       <div class="col-md-3 mt-5"  ></div>
@@ -86,26 +86,47 @@
         // }
         // Check if file is completely ready
         
-        $(document).ready(function () {
+        // $(document).ready(function () {
   
               
-              $('#btnSearch').click(function () {
+        //       $('#btnSearch').click(function () {
 
                   
-                  $('#hiddendiv').html('<div class="conatainer "><div class="row table-responsive"> <div class="col-md-2"><table class="table table-bordered   style="color:  ><thead><style>th{padding: 1px; </style><tr><th >DATE</th><th>STATUS</th> <th>LOGIN TIME</th><th>LOGOUT TIME</th> </tr> </thead><tbody></tbody></table></div></div></div>');
-              });
+        //           $('#hiddendiv').html('<div class="conatainer "><div class="row table-responsive"> <div class="col-md-2"><table class="table table-bordered   style="color:  ><thead><style>th{padding: 1px; }</style><tr><th >DATE</th><th>STATUS</th> <th>LOGIN TIME</th><th>LOGOUT TIME</th> </tr> </thead><tbody></tbody></table></div></div></div>');
+        //       });
 
               
-            });
+        //     });
         
+   
+            $(document).ready(function () {
   
               
-  // document.getElementById('#btnSearch').click(function () {
+  $('#btnSearch').click(function () {
 
       
-  //     document.getElementById('#hiddendiv').style.display="block";
-      
-  // });
+      $('#hiddendiv').css('display','inline')
+      });
+
+  
+});
+
+
+// $(document).ready(function () {
+  
+              
+//   $('#btnSearch').on('click', function()
+// {
+//     $('#hiddendiv').load('Devapplyleav.html');
+// });
+
+  
+// });
+
+
+  
+              
+  
 
   
 
