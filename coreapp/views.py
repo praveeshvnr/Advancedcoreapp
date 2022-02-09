@@ -22,8 +22,8 @@ def Manager_index(request):
     return render(request,'Manager_index.html')
 def Manager_accepted_projects(request):
     return render(request,'Manager_accepted_projects.html')
-def Manager_regected_projects(request):
-    return render(request,'Manager_regected_projects.html')
+def Manager_rejected_projects(request):
+    return render(request,'Manager_rejected_projects.html')
 
 
 

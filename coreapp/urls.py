@@ -12,5 +12,5 @@ urlpatterns=[
     re_path(r'^Tattend$', views.Tattend, name='task'),
     re_path(r'^Manager_index$', views.Manager_index, name='Manager_index'),
     re_path(r'^Manager_accepted_projects$', views.Manager_accepted_projects, name='Manager_accepted_projects'),
-    re_path(r'^Manager_regected_projects$', views.Manager_regected_projects, name='Manager_regected_projects'),
+    re_path(r'^Manager_rejected_projects$', views.Manager_rejected_projects, name='Manager_rejected_projects'),
 ]
